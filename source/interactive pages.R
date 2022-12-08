@@ -101,7 +101,7 @@ ui <- navbarPage(
         )
       )
     )
-   )
+  )
 
 # Define the server logic for the shiny app
 server <- function(input, output) {
