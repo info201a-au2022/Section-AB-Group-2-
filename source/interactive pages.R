@@ -68,7 +68,7 @@ ui <- navbarPage(
 )
 
   chart_1 <- tabPanel(
-    "Average height of NBA draft players each year". 
+    "Average height of NBA draft players each year", 
     fluidPage(
       titlePanel("Select Year Widget"), 
       sidebarLayout( 
@@ -80,7 +80,7 @@ ui <- navbarPage(
   )
 
   chart_2 <- tabPanel(
-    "Average Height Change Per Position Each Year From NBA Draft" 
+    "Average Height Change Per Position Each Year From NBA Draft",
     fluidPage(
       titlePanel("Select Year Widget"), 
       sidebarLayout(
@@ -92,7 +92,7 @@ ui <- navbarPage(
   )
 
   chart 3 <- tabPanel(
-    "Number Of Players In Each Position In NBA Draft" 
+    "Number Of Players In Each Position In NBA Draft",
     fluidPage(
       titlePanel("Select Player Widget"), 
       sidebarLayout( 
@@ -100,6 +100,18 @@ ui <- navbarPage(
         main_panel_plot4
         )
       )
+    )
+  )
+
+  conclusion_tab <- tabPanel(
+    "Conclusion",
+    fluidPage(
+      titlePanel("Conclusion/Summary Takeaways"),
+      h3("Specific takeaways"),
+      p("Chart 1: Average height of NBA draft players each year"),
+      p("Chart 2: Average Height Change Per Position Each Year From NBA Draft"),
+      p("Chart 3: Number Of Players In Each Position In NBA Draft"),
+      p("We used the NBA database, which stores physical data of all players from 1996-2021, including height and weight. Because we study NBA players, this database is very helpful to us. Using the NBA database also improves the accuracy and authority of our data. Looking at only the height and weight of rookie players over a 5-year period would not be enough to show changes. the NBA's large database also increases our data sample size in order to observe changes in the data.),
     )
   )
 
